@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import './App.css';
+import './estilos.css';
+import Navbar from './components/navbar/Navbar'
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-<p style={{backgroundColor: 'red', fontSize:85, textAlign: 'center'}}>armando la app</p>
+<Navbar />
     </>
 
   );
