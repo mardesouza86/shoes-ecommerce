@@ -48,7 +48,7 @@
 nav ul{
   list-style-type: none;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-right: 100px;
 }
 
@@ -75,11 +75,20 @@ header {
 
   margin-top:80px;
   margin-right: 80px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size:45px;
+  font-family: 'Comfortaa', cursive;
+  font-size:40px;
   font-weight:bold;
 }
 
 .carrito {
   padding-left: 20px;
+}
+
+.textoinicial {
+  margin:120px;
+  padding:60px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color:blue
 }

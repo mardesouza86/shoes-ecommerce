@@ -1,3 +1,5 @@
+import CartWidget from './CartWidget'
+
 const Navbar = () => {
 
     return (
@@ -12,7 +14,7 @@ const Navbar = () => {
     <li><a href="ninos.html">Zapatillas Niños</a></li>
     <li><a href="deportivo.html">Calzados Deportivos</a></li>
     <li><a href="contactanos.html">Contactanos</a></li>
-    <li><img src="https://img.icons8.com/fluency/48/000000/shopping-cart.png" alt="carrito"className="carrito"/></li>
+    <CartWidget />
     </ul>
 </nav>
 </header>
