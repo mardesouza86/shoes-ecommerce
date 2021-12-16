@@ -1,5 +1,5 @@
 import React from "react";
-
+import ItemCount from "./ItemCount";
 
 function Texto() {
   return <Valores name="MDQ" days={56} occupation="developers software de RedNet" />;
@@ -13,5 +13,7 @@ function Valores(props) {
     </p>
   );
 }
+
+<ItemCount />
 
 export default Texto;
