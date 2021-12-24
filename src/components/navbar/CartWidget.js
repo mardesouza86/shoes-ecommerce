@@ -3,7 +3,7 @@ const CartWidget = () => {
     
     return (
 
-<span><a href="#"><img src="https://img.icons8.com/fluency/48/000000/shopping-cart.png" alt="carrito"className="carrito"/></a></span>
+<span><a href="/carrito"><img src="https://img.icons8.com/fluency/48/000000/shopping-cart.png" alt="carrito"className="carrito"/></a></span>
 
     )
 }
