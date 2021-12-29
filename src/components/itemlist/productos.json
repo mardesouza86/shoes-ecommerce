@@ -1,0 +1,94 @@
+
+
+[
+    {"id":1,
+    "nombre":"ZAPATILLA ADIDAS ADVANTAGE BASE MUJER NEGRA",
+    "precio":16580,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatilla-adidas-advantage-base-mujer-negra-100010ee7511001-1.jpg",
+    "descripcion":"Zapatillas de mujer en color negro, marca Advantage, numero del 36 al 41",
+    "stock":15,
+    "categoria":1
+    },
+    {"id":2,
+    "nombre":"ZAPATILLA ADIDAS GRAND COURT BASE BLANCA",
+    "precio":21800,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatilla-adidas-grand-court-base-blanca-97487218-100010ee7904001-1.jpg",
+    "descripcion":"Zapatillas de hombre en color blanco, marca Grand Court, numero del 39 al 43",
+    "stock":30,
+    "categoria":2
+    },
+    {"id":3,
+    "nombre":"ZAPATILLA CONVERSE CHUCK TAYLOR ALL STAR OX MUJER BLANCA",
+    "precio":8900,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/2/0/200010564770001-1.jpg",
+    "descripcion":"Zapatillas de mujer en color blanco, marca All Star, numero del 36,5 al 39",
+    "stock":10,
+    "categoria":1
+    },
+    {"id":4,
+    "nombre":"ZAPATILLA PUMA ST RUNNER V2 FULL LEATHER NEGRA",
+    "precio":17900,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/6/4/640010367107008-1.jpg",
+    "descripcion":"Zapatillas de hombre en color negro, marca Puma, numero del 40 al 45 ",  
+    "stock":30,
+    "categoria":2
+    },
+    {"id":5,
+    "nombre":"ZAPATILLA CONVERSE CHUCK TAYLOR ALL STAR OX MUJER ROSA",
+    "precio":8900,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/2/0/200010168315001-1.jpg",
+    "descripcion":"Zapatillas de mujer en color rosa, marca All Start, numero del 37 al 41,5",  
+    "stock":20,
+    "categoria":1
+    },
+    {"id":6,
+    "nombre":"ZAPATILLA FILA EURO JOGGER SPORT GRIS",
+    "precio":15890,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/3/0/3000111u335x973-1.jpg",
+    "descripcion":"Zapatilla de hombre en color gris, marca Euro Jogger, numero del 40 al 44",
+    "stock":17, 
+    "categoria":2
+    },
+    {"id":7,
+    "nombre":"ZAPATILLAS RUNNING NIKE AIR ZOOM PEGASUS MUJER GRIS",   
+    "precio":25600,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-running-nike-air-zoom-pegasus-38-mujer-gris-510010cw7358500-1.jpg",
+    "descripcion":"Zapatillas de mujer en color gris, marca Nike, numero del 36 al 40",
+    "stock":10,
+    "categoria":1
+    },
+    {"id":8,
+    "nombre":"ZAPATILLAS NEW BALANCE MS 327 FC GRIS",
+    "precio":14680,
+    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-new-balance-ms-327-fc-gris-500010195254612-1.jpg",
+    "descripcion":"Zapatillas de hombre en color gris, marca New Balance, numero del 40 al 44",
+    "stock":15,
+    "categoria":2
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

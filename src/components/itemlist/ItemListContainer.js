@@ -1,70 +1,61 @@
-import { useState, useEffect } from "react"
-import ItemCount from "./ItemCount"
-import ItemList from "./ItemList"
-import { useParams } from "react-router-dom"
+import React from "react"
+import ItemList from "./ItemList";
+import {toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useEffect , useState} from "react";
+import { useParams } from "react-router-dom";
 
+const ItemListContainer = (props) =>{
 
+    const notify = () => toast("Producto agregado con exito al carrito!");  
 
-const productosIniciales = [
-    { nombre: "Zapatilla Adidas Blancas Hombre", precio: 12250, descripcion: "Zapatilla de hombre de la marca Adidas" },
-    { nombre: "Zapatilla Adidas Negras Hombre", precio: 12250, descripcion: "Zapatilla de hombre de la marca Adidas" },
-    { nombre: "Zapatilla Adidas Blancas Mujer", precio: 11600, descripcion: "Zapatilla de mujer de la marca Adidas" },
-    { nombre: "Zapatilla Adidas Negras Mujer", precio: 11600, descripcion: "Zapatilla de mujer de la marca Adidas"},
-    { nombre: "Zapatilla Nike Blancas Hombre", precio: 15700, descripcion: "Zapatilla de hombre de la marca Nike" },
-    { nombre: "Zapatilla Nike Negras Hombre", precio: 15700, descripcion: "Zapatilla de hombre de la marca Nike"},
-    { nombre: "Zapatilla Nike Blancas Mujer", precio: 14200, descripcion: "Zapatilla de mujer de la marca Nike"},
-    { nombre: "Zapatilla Nike Negras Mujer", precio: 14200, descripcion: "Zapatilla de mujer de la marca Nike"},
-    { nombre: "Zapatilla Puma Blancas Hombre", precio: 10100, descripcion: "Zapatilla de hombre de la marca Puma"},
-    { nombre: "Zapatilla Puma Negras Hombre", precio: 10100, descripcion: "Zapatilla de hombre de la marca Puma"},
-    { nombre: "Zapatilla Puma Blancas Mujer", precio: 9300, descripcion: "Zapatilla de mujer de la marca Puma"},
-    { nombre: "Zapatilla Puma Negras Mujer", precio: 9300, descripcion: "Zapatilla de mujer de la marca Puma"},
-]
+    const [productos, setProductos] = useState([]); 
+    const [loading, setLoading] = useState(true)
 
-
-
-const ItemListContainer = ({ greeting }) => {
-
-    let [lista, setLista] = useState([])
-    const { id } = useParams()
-
+    const {id} = useParams()
+    
+    const url = "https://mocki.io/v1/7d5f64bb-84b1-43a2-bad8-c442ca74bf45";
+    
+        const getProducto = async () => {
+          
+            const compra = await fetch(url);
+            const productos = await compra.json();
+            if (id) {
+              return productos.filter(producto=>producto.categoria==id)
+            }else{
+              return productos
+            }
+            
+          
+        };
+    
     
     useEffect(() => {
+    setTimeout(() => {
+      getProducto()
+      .then((res) => {
+        setProductos(res);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+    }, 1000);  
     
-        const promesa = new Promise((res, rej) => {
-            setTimeout(() => {
-                res(productosIniciales)
-            }, 2000)
-        })
-
-        promesa
-            .then((productos) => {
-                console.log("Todo bien")
-
-                //if(id){
-
-                //}else{
-                setLista(productos)
-                //}
-            })
-            .catch(() => {
-                console.log("Todo mal")
-            })
-
-        }, [id])
-        
+      
+  }, [id]);
+    
     
 
     return (
-        <div>
-            <h2>{greeting}</h2>
-            <ItemList lista={lista} />
-            <ItemCount />
-        </div>
+        <>
+        <div><h2 className="intro">Aprovecha este verano y comprate zapas nuevas! Mira nuestra variedad</h2></div>
+        <div><ItemList productos={productos}/></div>   
+        </>
     )
-}
+} 
+
+
 
 
 export default ItemListContainer
-
-
-

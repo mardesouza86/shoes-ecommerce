@@ -1,22 +1,31 @@
 import CartWidget from './CartWidget'
+import { Link, NavLink } from "react-router-dom"
 
-const Navbar = () => {
 
+const Navbar = ({links}) => {
+    
     return (
         <header> 
-            <img src="./logoshoes.png" alt="logotipo" className="logotipo" />
-            <h1 className="titulo">Calzados MDQ</h1>
+     <div id="brand" className="header"> 
+            <Link to="/" > 
+            <img src="./logoshoes.png" alt="logotipo" className="logotipo" /></Link>
+            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">
+            <h1 className="titulo">Shoes MDQ</h1>
+            </Link>
+                     
+            </div>
+
 <nav>
-    <ul>
-    <li><a href="home.html">Inicio</a></li>
-    <li><a href="nosotros.html">Nosotros</a></li>
-    <li><a href="adultos.html">Zapatillas Adultos</a></li>
-    <li><a href="ninos.html">Zapatillas Niños</a></li>
-    <li><a href="deportivo.html">Calzados Deportivos</a></li>
-    <li><a href="contactanos.html">Contactanos</a></li>
-    <CartWidget />
-    </ul>
+<nav>
+            {links.map((link)=>{
+                return <NavLink key={link.id} to={link.href} className="links">{link.nombre}</NavLink>
+            })} 
+
+            <NavLink to="/cart"><CartWidget/></NavLink>
+
+            </nav>
 </nav>
+
 </header>
     )
 }
