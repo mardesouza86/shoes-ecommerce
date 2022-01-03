@@ -147,3 +147,20 @@ div.contador {
   border-color: transparent;
   color: #fff;
 }
+
+.btn-endCompra {
+  border-radius: 6px;
+  display: inline-block;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 24px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: #fa343e;
+  border-color: transparent;
+  color: #fff;
+}

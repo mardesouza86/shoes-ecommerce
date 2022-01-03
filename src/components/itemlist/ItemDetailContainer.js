@@ -11,13 +11,13 @@ const ItemDetailContainer = () => {
 
     const {id} = useParams()
     
-    const url = "https://mocki.io/v1/7d5f64bb-84b1-43a2-bad8-c442ca74bf45";
+    const url = "https://mocki.io/v1/249d3a8e-6ae6-4feb-b4f6-e4c2fd954414";
     
         const getProducto = async () => {
           
             const compra = await fetch(url);
             const productos = await compra.json();
-            return productos.filter(producto=>producto.id==id)
+            return productos.filter(producto=>producto.id===id)
       };
     
     

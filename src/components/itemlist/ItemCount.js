@@ -27,14 +27,11 @@ const ItemCount = ({stock,initial,onAdd}) => {
     const agregarCarrito = () => {
         if(count <= stock){
           setCount(initial);
-          onAdd(count);
-          notify()
-    
-        }
-       
+          onAdd(count)
+      }
     }
-
-    return (
+   
+      return (
         <div>
             <>
       <div>
