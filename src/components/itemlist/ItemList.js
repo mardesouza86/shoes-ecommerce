@@ -9,7 +9,7 @@ const ItemList = ({productos}) => {
           <div className="listaProductos">
             {productos.map((prod) => {
               return (
-                <Item
+                <Item  
                   id={prod.id}
                   title={prod.nombre}
                   price={prod.precio}

@@ -4,17 +4,13 @@ import {Link} from "react-router-dom";
 import { useState } from "react";
 
 const ItemDetail = ({ producto }) => {
-
-const [state, setState] = useState(true);
-
-const [itemSelect, setItemSelect] = useState(true)
   
-function onAdd (cantidad, stock) {
-    
-if (cantidad < stock) {
-  //Guardas el prod en el state
-setItemSelect(producto) }
-}
+  const [state, setState] =useState(true);
+  
+  function onAdd (cantidad) {
+    console.log("producto agregado al carrito");
+    setState(false)
+  }
 
 if (state===true) {
   return  <><h2>PRODUCTO</h2> 

@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
           
             const compra = await fetch(url);
             const productos = await compra.json();
-            return productos.filter(producto=>producto.id===id)
+            return productos.filter(producto=>producto.id==id)
       };
     
     
