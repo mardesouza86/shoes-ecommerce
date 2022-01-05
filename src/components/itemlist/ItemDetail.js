@@ -6,11 +6,14 @@ import { useState } from "react";
 const ItemDetail = ({ producto }) => {
   
   const [state, setState] =useState(true);
+  const [itemSelect, setItemSelect] = useState(true)
   
-  function onAdd (cantidad) {
-    console.log("producto agregado al carrito");
-    setState(false)
-  }
+  function onAdd (cantidad, stock) {
+    setState(false);
+    if ( cantidad < stock) {
+    //Guardas el prod en el state
+    setItemSelect(producto) }
+    }
 
 if (state===true) {
   return  <><h2>PRODUCTO</h2> 
