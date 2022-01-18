@@ -8,7 +8,7 @@
     "imagen2":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatilla-adidas-advantage-base-mujer-negra-100010ee7511001-2.jpg",
     "descripcion":"Zapatillas de mujer en color negro, marca Advantage, numero del 36 al 41",
     "stock":15,
-    "categoria":1
+    "categoria":"mujer"
     },
     {"id":2,
     "nombre":"ZAPATILLA ADIDAS GRAND COURT BASE BLANCA",
@@ -16,15 +16,15 @@
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatilla-adidas-grand-court-base-blanca-97487218-100010ee7904001-1.jpg",
     "descripcion":"Zapatillas de hombre en color blanco, marca Grand Court, numero del 39 al 43",
     "stock":30,
-    "categoria":2
-    },
+    "categoria":"hombre"
+    },   
     {"id":3,
     "nombre":"ZAPATILLA CONVERSE CHUCK TAYLOR ALL STAR OX MUJER BLANCA",
     "precio":8900,
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/2/0/200010564770001-1.jpg",
     "descripcion":"Zapatillas de mujer en color blanco, marca All Star, numero del 36,5 al 39",
     "stock":10,
-    "categoria":1
+    "categoria":"mujer"
     },
     {"id":4,
     "nombre":"ZAPATILLA PUMA ST RUNNER V2 FULL LEATHER NEGRA",
@@ -32,7 +32,7 @@
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/6/4/640010367107008-1.jpg",
     "descripcion":"Zapatillas de hombre en color negro, marca Puma, numero del 40 al 45 ",  
     "stock":30,
-    "categoria":2
+    "categoria":"hombre"
     },
     {"id":5,
     "nombre":"ZAPATILLA CONVERSE CHUCK TAYLOR ALL STAR OX MUJER ROSA",
@@ -40,7 +40,7 @@
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/2/0/200010168315001-1.jpg",
     "descripcion":"Zapatillas de mujer en color rosa, marca All Start, numero del 37 al 41,5",  
     "stock":20,
-    "categoria":1
+    "categoria":"mujer"
     },
     {"id":6,
     "nombre":"ZAPATILLA FILA EURO JOGGER SPORT GRIS",
@@ -48,7 +48,7 @@
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/3/0/3000111u335x973-1.jpg",
     "descripcion":"Zapatilla de hombre en color gris, marca Euro Jogger, numero del 40 al 44",
     "stock":17, 
-    "categoria":2
+    "categoria":"hombre"
     },
     {"id":7,
     "nombre":"ZAPATILLAS RUNNING NIKE AIR ZOOM PEGASUS MUJER GRIS",   
@@ -56,7 +56,7 @@
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-running-nike-air-zoom-pegasus-38-mujer-gris-510010cw7358500-1.jpg",
     "descripcion":"Zapatillas de mujer en color gris, marca Nike, numero del 36 al 40",
     "stock":10,
-    "categoria":1
+    "categoria":"mujer"
     },
     {"id":8,
     "nombre":"ZAPATILLAS NEW BALANCE MS 327 FC GRIS",
@@ -64,8 +64,44 @@
     "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-new-balance-ms-327-fc-gris-500010195254612-1.jpg",
     "descripcion":"Zapatillas de hombre en color gris, marca New Balance, numero del 40 al 44",
     "stock":15,
-    "categoria":2
-    }
+    "categoria":"hombre"
+    },
+    {"id":9,
+        "nombre":"ZAPATILLAS KAPPA SAN ANTONIO NIÑO NIÑA AZUL",
+        "precio":9580,
+        "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-kappa-san-antonio-ni_o-ni_a-azul-39501304ne40a85-1.jpg",
+        "imagen2":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-kappa-san-antonio-ni_o-ni_a-azul-39501304ne40a85-3.jpg",
+        "descripcion":"Zapatillas de chicos en color azul, marca Kappa, numero del 24 al 31",
+        "stock":8,
+        "categoria":"chicos"
+        },
+        {"id":10,
+            "nombre":"ZAPATILLAS ADDNICE ARCO 2 NIÑO NIÑA ROJA",
+            "precio":6490,
+            "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-addnice-arco-2-ni_o-ni_a-roja-32001bc02817a34-1.jpg",
+            "imagen2":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/3cb7d75bc2a65211451e92c5381048e9/z/a/zapatillas-addnice-arco-2-ni_o-ni_a-roja-32001bc02817a34-3.jpg",
+            "descripcion":"Zapatillas de chicos en color roja, marca Addnice, numero del 25 al 29",
+            "stock":4,
+            "categoria":"chicos"
+            },
+            {"id":11,
+                "nombre":"ZAPATILLAS PUMA GRAVITION NENE AZUL",
+                "precio":8150,
+                "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-puma-gravition-pro-azul-640010384288003-1.jpg",
+                "imagen2":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/3cb7d75bc2a65211451e92c5381048e9/z/a/zapatillas-puma-gravition-pro-azul-640010384288003-3.jpg",
+                "descripcion":"Zapatillas de nene en color azul, marca Puma numero del 18 al 23",
+                "stock":10,
+                "categoria":"chicos"
+                },
+                {"id":12,
+                    "nombre":"ZAPATILLAS ADIDAS FORTARUN NENA GRIS",
+                    "precio":7598,
+                    "imagen":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-adidas-fortarun-bebe-gris-100010h04179001-1.jpg",
+                    "imagen2":"https://solodeportes-9bvc3m9qgmf6g9x.stackpathdns.com/media/catalog/product/cache/3cb7d75bc2a65211451e92c5381048e9/z/a/zapatillas-adidas-fortarun-bebe-gris-100010h04179001-3.jpg",
+                    "descripcion":"Zapatillas de nena en color azul, marca Adidas numero del 20 al 27",
+                    "stock":10,
+                    "categoria":"chicos"
+                    }
 ]
 
 

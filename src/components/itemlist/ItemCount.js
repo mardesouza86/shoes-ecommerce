@@ -7,13 +7,16 @@ const ItemCount = ({stock,initial,onAdd}) => {
     const [count, setCount] = useState(1)
     const [lista, setLista] = useState([]);
     const notify = () => toast("Su producto fue agregado al carrito con exito!");
-    const notify2 = () => toast("Lamentablemente le informamos que no contamos con mas stock del producto");
+    const notify2 = () => toast("No hay stock suficiente para agregar este producto al carrito!");
+     
     const sumar = () => {
         if (count < stock) {
             setCount(count + 1);
             setLista();
+            console.log("su producto se agrego al carrito con exito!");
           } else {
-            notify2();
+            notify2()
+          console.log("no hay suficiente stock");
           }
         };
 
@@ -28,6 +31,10 @@ const ItemCount = ({stock,initial,onAdd}) => {
         if(count <= stock){
           setCount(initial);
           onAdd(count)
+          notify();
+      }else
+      {
+          notify2()
       }
     }
    
@@ -36,7 +43,6 @@ const ItemCount = ({stock,initial,onAdd}) => {
             <>
       <div>
         <div className="producto">
-          
           <h5> Cantidad : {count}</h5>
             <button onClick={sumar}className="btnSuma">+</button>
             <button onClick={restar} className="btnResta">-</button>

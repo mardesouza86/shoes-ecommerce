@@ -6,10 +6,10 @@ const Navbar = ({links}) => {
     
     return (
         <header> 
-     <div id="brand" className="header"> 
+     <div className="header"> 
             <Link to="/" > 
-            <img src="./logoshoes.png" alt="logotipo" className="logotipo" /></Link>
-            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">
+            <img src="./logotipo.png" alt="logotipo" className="logotipo" /></Link>
+            <Link style={ {color: 'inherit', textDecoration: 'inherit'}} to="/">
             <h1 className="titulo">Shoes MDQ</h1>
             </Link>
                      

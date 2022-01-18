@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
       const Item = ({id, title, price, stock, image}) =>{
     return(
       <>
-        <div className="listaProductos">
+        < div className="item">
         <img src={image} alt="zapa" width="200px"></img> 
             <div><h5>{title}</h5></div>
             <div><h5>Precio $ {price} </h5></div>

@@ -7,52 +7,54 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = (props) =>{
 
-    const notify = () => toast("Producto agregado con exito al carrito!");  
+    const notify = () => toast("Agregaste este producto al carrito");  
 
     const [productos, setProductos] = useState([]); 
     const [loading, setLoading] = useState(true)
 
     const {id} = useParams()
     
-    const url = "https://mocki.io/v1/249d3a8e-6ae6-4feb-b4f6-e4c2fd954414";
+    const url = "https://mocki.io/v1/b620ad81-b4e2-455e-a509-2c0011d7c35a";
     
-        const getProducto = async () => {
+    const getProducto = async () => {
           
-            const compra = await fetch(url);
-            const productos = await compra.json();
-            if (id) {
-              return productos.filter(producto=>producto.categoria==id)
-            }else{
-              return productos
-            }
-            
-          
-        };
-    
-    
-    useEffect(() => {
-    setTimeout(() => {
-      getProducto()
-      .then((res) => {
-        setProductos(res);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-    }, 1000);  
-    
+      const pedido = await fetch(url);
+      const productos = await pedido.json();
+      if (id) {
+        return productos.filter(producto=>producto.categoria==id)
+      }else{
+        return productos
+      }
       
-  }, [id]);
     
-    
+  };
 
-    return (
-        <>
-        <div><h2 className="intro">Aprovecha este verano y comprate zapas nuevas! Mira nuestra variedad</h2></div>
-        <div><ItemList productos={productos}/></div>   
-        </>
-    )
+
+useEffect(() => {
+
+getProducto()
+.then((res) => {
+  setProductos(res);
+  setLoading(false);
+})
+.catch((error) => {
+  console.log(error);
+});
+
+
+
+}, [id]);
+
+
+
+return (
+  <>
+  <div><h2 className="titulos">Nuestro Catalogo de Zapatillas Online | Verano 2022</h2></div>
+  
+  
+  <div><ItemList productos={productos}/></div>   
+  </>
+)
 } 
 
 

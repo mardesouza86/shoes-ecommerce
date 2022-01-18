@@ -6,7 +6,7 @@ const ItemList = ({productos}) => {
 
     if (productos !== []) {
       return (<>
-          <div className="listaProductos">
+          <div className="itemList">
             {productos.map((prod) => {
               return (
                 <Item  

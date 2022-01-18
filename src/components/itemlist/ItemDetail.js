@@ -1,59 +1,39 @@
 import React from "react";
-import ItemCount from "./ItemCount";
-import {Link} from "react-router-dom";
-import { useState } from "react";
+import { useContexto } from "../../CartContext";
+import ItemCount from "../itemlist/ItemCount";
+import { NavLink } from "react-router-dom";
 
-const ItemDetail = ({ producto }) => {
-  
-  const [state, setState] =useState(true);
-  const [itemSelect, setItemSelect] = useState(true)
-  
-  function onAdd (cantidad, stock) {
-    setState(false);
-    if ( cantidad < stock) {
-    //Guardas el prod en el state
-    setItemSelect(producto) }
+const ItemDetail = ({producto}) => {
+    
+    const {agregarAlCarrito} = useContexto()
+
+    function onAdd(cantidad) {
+      agregarAlCarrito(producto, cantidad);
     }
 
-if (state===true) {
-  return  <><h2>PRODUCTO</h2> 
-  <div className="listaProductos">
-
-  {producto.map((prod) =>{
-      return <div><h5>{prod.nombre}</h5>
-      <img src={prod.imagen} alt={prod.nombre} width="200px" />
-      <h5>Precio:  ${prod.precio}</h5>
-      <h5>{prod.descripcion}</h5>
-      <ItemCount stock={prod.stock} initial={1} onAdd={onAdd}/>
-      </div>
-            })}
-               
-            </div>
-         </>
-            
-        }else{
             return (
-                <><h2 className="modeloElegido">Modelo de Zapatilla Elegido</h2>     
-                     <div className="listaProductos">
-                    {producto.map((prod) =>{
-                    return <div><h5>{prod.nombre}</h5>
-                    <img src={prod.imagen} alt={prod.nombre} width="400px" />
-                    <h5>Precio:  ${prod.precio}</h5>
-                    <h5>{prod.descripcion}</h5>
-                    <h5>{prod.cantidad}</h5>
-                    <Link to="/Cart"><button className="btn-endCompra">Finalizar Compra</button></Link>
-                    
-                    
-                    </div>
-                })}
-                   
+              <>
+                <h2 className="titulos">DETALLE DEL PRODUCTO SELECCIONADO</h2>
+                <div className="itemDetail">
+                  <div>
+                    <img src={producto.imagen} alt={producto.nombre} width="200px" />
+                    <h5>{producto.nombre}</h5>
+                    <h5>Precio: ${producto.precio}</h5>
+                    <h5>{producto.descripcion}</h5>
+                    <ItemCount
+                      stock={producto.stock}
+                      initial={1}
+                      onAdd={onAdd}
+                    />
+                    <NavLink to="/cart">
+                      <button className="btn-endCompra">Finalizar Compra</button>
+                    </NavLink>
+                  </div>
                 </div>
-             </>
-            )
-
-        }
-                   
+              </>
+            );
+            
 }
 
-
 export default ItemDetail 
+

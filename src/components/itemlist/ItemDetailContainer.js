@@ -11,37 +11,36 @@ const ItemDetailContainer = () => {
 
     const {id} = useParams()
     
-    const url = "https://mocki.io/v1/249d3a8e-6ae6-4feb-b4f6-e4c2fd954414";
-    
-        const getProducto = async () => {
+    const url = "https://mocki.io/v1/b620ad81-b4e2-455e-a509-2c0011d7c35a"
+    const getProducto = async () => {
           
-            const compra = await fetch(url);
-            const productos = await compra.json();
-            return productos.filter(producto=>producto.id==id)
-      };
-    
-    
-    useEffect(() => {
-    getProducto()
-      .then((res) => {
-        setProducto(res);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  }, [id]);
-        
-    
-console.log(producto);
-   
+        const pedido = await fetch(url);
+        const productos = await pedido.json();
+        return productos.find((producto)=>producto.id==id)
+  };
 
+
+useEffect(() => {
+getProducto()
+  .then((res) => {
+    setProducto(res);
+    setLoading(false);
+  })
+  .catch((error) => {
+    console.log(error.message);
+  });
+}, [id]);
     
+
+console.log(producto);
+
+
+
 return (
-  
-    <>
-    <ItemDetail producto={producto}/>
-    </>
+
+<>
+<ItemDetail producto={producto}/>
+</>
 )
 
 
