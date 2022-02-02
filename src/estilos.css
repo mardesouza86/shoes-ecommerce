@@ -21,7 +21,7 @@ header {
 h1.titulo {
   margin-top: -40px;
   margin-left: -90px;
-  margin-bottom: 30px;
+  margin-bottom: -10px;
   font-family: 'Licorice', cursive;
   font-size:50px;
   text-decoration: none;
@@ -35,26 +35,36 @@ h1.titulo {
     text-decoration: none;
     color: rgb(4, 4, 161);
     margin-bottom: 35px;
-    font-size: 35px;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Licorice', cursive;
-    font-family: 'The Nautigal', cursive;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+  
 }
 .carrito {
-  padding-left: 20px;
+  width:30px;
 }
 
 .contador {
   border-color:gray;
   border-radius:20px;
   border-style: solid;
-  border : 3px solid #3483fa;
   background-color: #3483fa;
   color:#fff;
-  font-size:18px;
+  font-size:12px;
   margin-left: 10px;
   margin-top: 200px;
   padding: 5px; 
+}
+
+h5.colorPrecio {
+  color:#229acd;
+}
+
+h5.unidadesDisponibles {
+  font-size:14px;
+}
+
+h5.descripcion {
+font-size:16px;
 }
 a:link { text-decoration:none; } a:visited { text-decoration:none; }
 
@@ -168,12 +178,20 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-border-radius: .5em;
-border-color: darkgray;
 text-align: center;
 }
 
+.contenedorItemDetail{
+  border-style: solid;
+  border-color: #3483fa;
+  border-radius: 50px;
+  margin:25px;
+  padding:25px;
+}
 
+.fuenteItemDetail {
+  font-size: 16px;
+}
 .item:hover {
   transform: translateY(-15px);
   box-shadow: 0,12px,16px rgba(0,0,0,0.2);
@@ -253,11 +271,12 @@ text-align: center;
 }
 
 .titulos {
-  margin:10px;
+  margin-bottom: 80px;
   padding:10px;
   text-align: center;
-  font-family: 'Comfortaa', cursive;
-  font-size: 18px;
+  font-family:  'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
 }
 
 .btn-endCompra {
@@ -297,4 +316,27 @@ text-align: center;
   background-color: #3483fa;
   border-color: transparent;
   color: #fff;
+  margin-left: 45%;
+  margin-right: 42%
+}
+
+.btnComprarProductos {
+  margin:10px;
+  padding:10px;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 24px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: #3483fa;
+  border-color: transparent;
+  color: #fff;
+  margin-left: 43%;
+  margin-right: 42%
 }

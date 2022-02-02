@@ -12,7 +12,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
     const sumar = () => {
         if (count < stock) {
             setCount(count + 1);
-            setLista();
+            setLista(lista);
             console.log("su producto se agrego al carrito con exito!");
           } else {
             notify2()
@@ -42,8 +42,8 @@ const ItemCount = ({stock,initial,onAdd}) => {
         <div>
             <>
       <div>
-        <div className="producto">
-          <h5> Cantidad : {count}</h5>
+        <div>
+          <h5 className="fuenteItemDetail"> Cantidad : {count}</h5>
             <button onClick={sumar}className="btnSuma">+</button>
             <button onClick={restar} className="btnResta">-</button>
             <div>

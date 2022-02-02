@@ -1,30 +1,21 @@
-import React from "react";
-import Logo from "./Logo";
+// import React from "react";
+// import Logo from "./Logo";
 
-const Marcas = ({marcas}) => {
+// const Marcas = ({marcas}) => {
       
     
-        if (marcas == marcas) {
-          return (<>
-              <div className="marcas">
-                {marcas.map((brand) => {
-                  return (
-                    <Logo  
-                      id={brand.id}           
-                      image={brand.imagen}
-                    />
-                  );
-                })}
-              </div>
-            </>
-          );
-        }else{
-          return null;
-        }
+        
+//           return (
+            
+//                   return (
+//                     <Logo  key={brand.id} id={brand.id} image={brand.image} />           
+              
+//           );
+      
             
             
        
         
-    } 
+//     } 
     
-    export default Marcas
+//     export default Marcas
