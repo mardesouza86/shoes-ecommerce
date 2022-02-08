@@ -1,62 +1,62 @@
 import React from "react"
 import ItemList from "./ItemList";
-import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect , useState} from "react";
 import { useParams } from "react-router-dom";
+import { db } from "../../firebase/Firebase";
+import { getDocs, query, collection, where, doc} from "firebase/firestore"
+
 
 const ItemListContainer = (props) =>{
 
-    const notify = () => toast("Agregaste este producto al carrito");  
+  const [productos, setProductos] = useState([]); 
+  const {nombre} = useParams()
+  
+  useEffect(() => {
 
-    const [productos, setProductos] = useState([]); 
-    const [loading, setLoading] = useState(true)
+    const prodCollecion  = collection(db, "productos")
 
-    const {id} = useParams()
-    
-    const url = "https://mocki.io/v1/b620ad81-b4e2-455e-a509-2c0011d7c35a";
-    
-    const getProducto = async () => {
+    const usoBD = (info) =>{
+      getDocs(info)
+        .then((resultado) =>{
+          const docs = resultado.docs
+          const lista = docs.map((doc)=>{
+          const id= doc.id
+          const data = doc.data()
+          const producto = {
+            id: id,
+            ...data
+          }
+          return producto;
           
-      const pedido = await fetch(url);
-      const productos = await pedido.json();
-      if (id) {
-        return productos.filter(producto=>producto.categoria==id)
-      }else{
-        return productos
-      }
-      
+        })
+        
+        setProductos(lista)
+      })
+      .catch((error) => {
+      })
+    }
+
+    if (nombre) {
+      const consulta = query(prodCollecion, where ("categoria", "==" , nombre))
+      usoBD(consulta)  
+    }else{
+      usoBD(prodCollecion)}
     
-  };
-
-
-useEffect(() => {
-
-getProducto()
-.then((res) => {
-  setProductos(res);
-  setLoading(false);
-})
-.catch((error) => {
-  console.log(error);
-});
-
-
-
-}, [id]);
-
-
-
-return (
-  <>
-  <div><h2 className="titulos">Nuestro Catalogo de Zapatillas Online | Verano 2022</h2></div>
+}, [nombre]);
   
   
-  <div><ItemList productos={productos}/></div>   
-  </>
-)
+  
+  return (
+    <>
+    <div><h2 className="titulos">Nuestro Catalogo de Zapatillas Online | Verano 2022</h2></div>
+    
+    
+    <div><ItemList productos={productos}/></div>   
+    </>
+  )
+  
 } 
-
 
 
 

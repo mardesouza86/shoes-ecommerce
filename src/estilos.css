@@ -281,6 +281,7 @@ text-align: center;
 
 .btn-endCompra {
   margin:10px;
+  margin-bottom: 30px;
   padding:10px;
   border-radius: 6px;
   display: inline-block;
@@ -320,7 +321,196 @@ text-align: center;
   margin-right: 42%
 }
 
-.btnComprarProductos {
+
+.marca {
+  display: flex;
+  margin: 10px;
+  padding:10px;
+  text-align: center;
+  font-family:  'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.contenedorMarcas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 0px;
+}
+
+.itemCarrito {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.carritoVacio {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.lineaCarrito {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin:20px;
+}
+
+.btnRestaCarrito {
+  margin-left:30px;
+  margin-right:10px;
+  border:none;
+    font-size: 24px;
+    font-style: bold;
+    color: #3483fa;
+}
+
+.footerCarrito {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.btnDeleteAllCarrito {
+  border-radius: 6px;
+  display: flex;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  line-height: 48px;
+  justify-content: center;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: #3483fa;
+  border-color: transparent;
+  color: #fff;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.precioCompra {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.login-with-google-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+.auth1 {
+  text-align: center;
+  margin:10px;
+  padding:10px;
+}
+
+.auth2 {
+  text-align: center;
+  margin:10px;
+  padding:10px;
+}
+
+.auth3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .auth4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+  }
+  
+  .userLogeed{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .ingresoClientes {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .registro {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .btnUserNew {
+    margin-left:10px;
+    position: relative;
+    top: -4px;
+  }
+
+  .userLogeed2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:blue;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.btn-volverAProductos {
   margin:10px;
   padding:10px;
   border-radius: 6px;
@@ -334,9 +524,76 @@ text-align: center;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #3483fa;
+  background-color: #1d8808;
   border-color: transparent;
   color: #fff;
-  margin-left: 43%;
-  margin-right: 42%
+}
+
+.btn-volverAProductos2{
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding:10px;
+  border-radius: 6px;
+  display: block;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 24px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: #1d8808;
+  border-color: transparent;
+  color: #fff;
+}
+.userLoggedPic {
+  border-radius:50%;
+  width: 3%;
+  height: auto;
+  margin-left: 10px;
+}
+
+.imgFooter {
+  margin-top:50px;
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contFormCompra {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding:10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detalleFormulario {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding:10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tituloFormulario {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding:10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botonFinal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -60px;
 }

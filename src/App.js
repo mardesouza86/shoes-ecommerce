@@ -1,6 +1,4 @@
 import React from 'react';
-
-//CSS
 import './estilos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar/Navbar';
@@ -11,8 +9,8 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Cart from './components/navbar/Cart';
 import Footer from './components/footer/Footer';
 import CustomProvider from "./CartContext";
-
-
+import Pay from "./components/pay/Pay.js";
+import Ingreso from "./components/ingreso/Ingreso.js";
 
 
 
@@ -35,12 +33,13 @@ return (
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/productos" element={<ItemListContainer />} />
-          <Route path="/categoria/:id" element={<ItemListContainer />} />
+          <Route path="/categoria/:nombre" element={<ItemListContainer />} />
           <Route path="/productos/:id" element={<ItemDetailContainer />} />
-          <Route path="/marcas/:id" element={<Marcas />} />
+          <Route path="/marcas/" element={<Marcas />} />
+          <Route path="/pay" element={<Pay/>}/>
+          <Route path="/ingresar" element={<Ingreso />} />
         </Routes>
       </main>
-
       <Footer/>
     </BrowserRouter>
   </CustomProvider>

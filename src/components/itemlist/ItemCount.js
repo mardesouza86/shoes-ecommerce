@@ -1,29 +1,22 @@
 import {useState} from 'react'
-import {ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from "sweetalert2"
+
 
 const ItemCount = ({stock,initial,onAdd}) => {
 
     const [count, setCount] = useState(1)
     const [lista, setLista] = useState([]);
-    const notify = () => toast("Su producto fue agregado al carrito con exito!");
-    const notify2 = () => toast("No hay stock suficiente para agregar este producto al carrito!");
      
     const sumar = () => {
         if (count < stock) {
             setCount(count + 1);
             setLista(lista);
-            console.log("su producto se agrego al carrito con exito!");
-          } else {
-            notify2()
-          console.log("no hay suficiente stock");
           }
         };
 
     const restar = () => {
+        if (count > 1) {
         setCount(count - 1)
-        if (count < 2) {
-            setCount(1)
         }
     }
 
@@ -31,12 +24,17 @@ const ItemCount = ({stock,initial,onAdd}) => {
         if(count <= stock){
           setCount(initial);
           onAdd(count)
-          notify();
-      }else
-      {
-          notify2()
+          Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'su producto fue agregado al carrito',
+            showConfirmButton: false,
+            timer: 1800
+          })
+        }
+        else {
+          Swal.fire ('ha ocurrido un error, no se pudo agregar el producto') }
       }
-    }
    
       return (
         <div>
@@ -49,17 +47,6 @@ const ItemCount = ({stock,initial,onAdd}) => {
             <div>
             <button onClick={agregarCarrito} className="btn-agregarCarrito">Agregar a Carrito</button>
           </div>
-          <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            />
         </div>
       </div>
     </>

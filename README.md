@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# SHOES MDQ, Tienda de Zapatillas Online
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Este proyecto fue realizado para el curso de React Js, dictado por CoderHouse_
 
-## Available Scripts
+## FUNCIONALIDADES 💻
 
-In the project directory, you can run:
+- Se obtienen los datos desde FireStore, servicio brindado por Firebase.
+- Mediante el sistema de componentes, se dividen las responsabilidades entre si.
+- La comunicacion con el usuario se da a traves de los SweetAlert
+- Los productos se pueden visualizar a traves de un catalogo en general, o bien, verlos por categorias usando los diferenetes filtros segun cada categoria.
+- El stock de productos se chequea antes de sumarlo al carrito, para evitar errores de falta de stock, a futuro trabajara con stock a tiempo real.
+- A traves de la implementacion de las cantidades y precio unitario de cada producto se actualiza constantemente el carrito a fin de hacer la app mas dinamica y rapida y tambien para agilizar la suma total de cantidades de articulos y precio total. 
+- Al finalizar la compra, se genera un ticket de compra, el cual en un futuro, el cliente podra buscarlo y visualizar en que proceso esta su pedido.
+- Dentro del carrito de compras se implementan los botones "sumar item", "restar item", "borrar producto" y "vaciar carrito" para que el usuario pueda hacer cualquier modificacion directamente desde el carrito sin tener que volver al detalle del producto, en caso de que el carrito este vacio tambien se implementa un boton para que el usuario sea redirigido directamente al catalogo general para empezar a comprar productos.
+- Desde la seccion "Ingresar/Registarse" se implementa la autentificacion de cada usuario mediante el servicio de Firebase, como asi tambien la posibilidad de acceder mediante una cuenta de google, donde el usuario podra crear una cuenta o acceder directamente mediante un login y quedar asi ya logueado para poder realizar compras en la app.
 
-### `npm start`
+## HERRAMIENTAS UTILIZADAS ⚙️🛠️
+- `React JS`
+- `Firebase`
+- `React Dom`
+- `Sweet Alert2`
+- `Css`
+- `Boostrap`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## DEMO
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Pagina Principal con todos los productos, filtro por categoria, veo las marcas que hay, hago un login de usuario, selecciono un producto, accedo al detalle del producto, elijo cantidad y voy al carrito, alli selecciono finalizar compra y relleno el formulario para que me genere un numero de orden y cargue la compra en la base de datos de "pedidos".
 
-### `npm test`
+<img src="./public/assets/shoesMDQ.gif" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## PERSONAS QUE HICIERON POSIBLE ESTO 🙏
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Quiero agradecerle especialmente al profesor Horacio Gutierrez por su brillante curso de React JS y todas sus enseñanzas a lo largo de este curso como asi tambien al crack de mi tutor, Agustín Coelho, quien desde el dia 1 que empezo el curso estaba pendiente de si entendia, de pasar material y por supuesto responder todas las dudas que iban surgiendo a lo largo del curso.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## CREADOR 😛
+- Martin Alejandro de Souza
+- _Estudiante de Desarrollo FullStack, autodidacta como estilo de vida!_
+- [Linkedin](https://www.linkedin.com/in/martindesouza86)
+- [Github](https://github.com/mardesouza86)
